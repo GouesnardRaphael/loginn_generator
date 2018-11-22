@@ -1,7 +1,5 @@
 package geco;
 
-import com.sun.javaws.Main;
-
 import java.text.Normalizer;
 import java.util.regex.Pattern;
 
