@@ -44,6 +44,15 @@ public class LoginGeneratorTest {
     }
 
     @Test
+    public void CT4() {
+        String prenom = "Paul";
+        String nom = "Du";
+        String s = loginGenerator.generateLoginForNomAndPrenom(nom, prenom);
+        loginService.addLogin(s);
+        assertTrue(loginService.loginExists("PDU"));
+    }
+
+    @Test
     public void generateLoginForNomAndPrenom2() {
         String prenom ="John";
         String nom = "Ralling";
